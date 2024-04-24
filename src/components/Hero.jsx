@@ -11,7 +11,7 @@ import { AiOutlineMobile } from "react-icons/ai";
 
 const Hero = () => {
    return (
-      <div className='w-full h-full relative'>
+      <div id='beranda' className='w-full h-full relative'>
          <img
             src={bego}
             className='object-cover h-full w-full'

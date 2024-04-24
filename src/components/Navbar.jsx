@@ -8,6 +8,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 const Navbar = () => {
+   const [active, setActive] = useState('branda')
    const [togle, setTogle] = useState(false)
    return (
       <nav className='flex  justify-between px-2 py-2  fixed z-50 w-full top-3 items-center '>
@@ -33,7 +34,15 @@ const Navbar = () => {
                <ul className='flex gap-10'>
                   {menuNavbar.map((item, i) => {
                      return (
-                        <li key={i} className='text-white'>{item.menu}</li>
+                        <li
+                           key={i}
+                           className={`${active === item.menu ? "text-[#48D6D7]" : "text-white"}`}
+                           onClick={() => setActive(item.menu)}
+                        >
+                           <a href={`#${item.id}`}>
+                              {item.menu}
+                           </a>
+                        </li>
                      )
                   })}
                </ul>
@@ -46,15 +55,21 @@ const Navbar = () => {
                </Button>
             </div>
 
-            <div className={`${togle ? "flex" : "hidden"} p-6 bg-black-gradient fixed z-50 top-16 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+            <div className={`${togle ? "flex" : "hidden"} px-3  fixed z-50 top-16 left-0  my-2 min-w-full  sidebar`}>
                {togle ? (
-                  <div className='w-12 h-24 relative flex justify-center'>
+                  <div className='w-full  relative flex justify-start bg-black-gradient p-6 rounded-xl '>
                      <ul className="mt-[-6px]">
                         {menuNavbar.map((item, i) => {
                            return (
-                              <ul key={i}>
-                                 <li className='text-white'>{item.menu}</li>
-                              </ul>
+                              <li
+                                 key={i}
+                                 className={`${active === item.menu ? "text-[#48D6D7]" : "text-white"}`}
+                                 onClick={(() => setActive(item.menu))}
+                              >
+                                 <a href={`#${item.id}`}>
+                                    {item.menu}
+                                 </a>
+                              </li>
                            )
                         })}
                      </ul>
@@ -64,7 +79,7 @@ const Navbar = () => {
                )}
             </div>
          </div>
-      </nav>
+      </nav >
    )
 }
 

@@ -3,7 +3,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 
 const Contack = () => {
    return (
-      <div className='w-full mt-20'>
+      <div id='kontak' className='w-full mt-20'>
          <div class="flex flex-col justify-center text-center w-full mb-24">
             <p class="text-[#39FAC5] mb-8">K O N T A K</p>
             <div class="flex justify-center relative ">

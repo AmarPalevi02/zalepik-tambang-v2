@@ -2,7 +2,7 @@ import React from 'react'
 import { clients } from '../constans/clients'
 const Client = () => {
    return (
-      <div className='w-full px-3 md:mt-20'>
+      <div id='klient' className='w-full px-3 md:mt-20'>
          <div className="bg-gray-50 py-20 rounded-xl">
             <div class="w-full relative flex justify-center  ">
                <div class="w-[650px]  text-center  relative z-10">

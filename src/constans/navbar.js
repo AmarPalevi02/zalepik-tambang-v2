@@ -1,17 +1,22 @@
 export const menuNavbar = [
    {
-      menu: 'Beranda'
+      menu: 'Beranda',
+      id: 'beranda'
    },
    {
-      menu: 'Profil'
+      menu: 'Profil',
+      id: 'profil'
    },
    {
-      menu: 'Layanan'
+      menu: 'Layanan',
+      id: 'layanan'
    },
    {
-      menu: 'Klient'
+      menu: 'Klient',
+      id: 'klient'
    },
    {
-      menu: 'Kontak'
+      menu: 'Kontak',
+      id: 'kontak'
    },
 ]

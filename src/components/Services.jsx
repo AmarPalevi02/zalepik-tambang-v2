@@ -3,7 +3,7 @@ import { cloud, card2, card3, card4 } from '../assets'
 
 const Services = () => {
    return (
-      <div className='w-full relative mt-20'>
+      <div id='layanan' className='w-full relative mt-20'>
          <div className="w-full relative flex justify-center">
             <div className="w-[450px]  text-center relative md:h-48 z-10">
                <p className="text-[#39FAC5] mb-2">L A Y A N A N</p>

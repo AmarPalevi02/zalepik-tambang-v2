@@ -5,7 +5,7 @@ import { team, logo2 } from '../assets'
 
 const Profile = () => {
    return (
-      <div classNameName='w-full h-full'>
+      <div id='profil' classNameName='w-full h-full'>
          <div classNameName="flex w-full flex-col items-center ">
             <div className="flex flex-col md:flex-row md:justify-between ">
                <div className="flex flex-col justify-center bg-black py-4 md:w-[50%]">
