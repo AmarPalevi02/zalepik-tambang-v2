@@ -1,13 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Titillium', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-black-gradient {
+  background: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.border-bottom-nav::after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid #48D6D7;
+  margin-left: 19px;
+  margin-right: 10px;
+  width: calc(100% - 38px);
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+}
+
+.shadow-hero {
+  text-shadow: -1px 0 aqua, 0 1px aqua, 1px 0 aqua, 0 -1px aqua;
+}
+
+.title-hero::after {
+  content: '';
+  display: block;
+  border-bottom: 8px solid #48D6D7;
+  width: 100%;
+  position: absolute;
+  bottom: 42%;
+  left: 0;
+  z-index: -10;
+}
+
+
+.title-profile::after {
+  content: '';
+  display: block;
+  border-bottom: 8px solid #48D6D7;
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  z-index: -10;
+}
+
+.text-more {
+  text-shadow: -1px 0 #838383, 0 1px #838383, 1px 0 #838383, 0 -1px #838383;
+}
+
+.text-contack::after {
+  content: '';
+  display: block;
+  border-bottom: 8px solid #39FAC5;
+  width: 100%;
+  position: absolute;
+  bottom: 42%;
+  left: 0;
+  z-index: -10;
 }
