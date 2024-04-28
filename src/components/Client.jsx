@@ -1,5 +1,6 @@
 import React from 'react'
 import { clients } from '../constans/clients'
+
 const Client = () => {
    return (
       <div id='klient' className='w-full px-3 md:mt-20'>
@@ -15,7 +16,7 @@ const Client = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2">
                {clients.map((client, i) => {
                   return (
-                     <div className="">
+                     <div key={i} className="">
                         <img src={client.logo} alt="" />
                      </div>
                   )

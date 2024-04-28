@@ -6,8 +6,8 @@ import { TiSocialFacebookCircular } from "react-icons/ti";
 
 const Footer = () => {
    return (
-      <footer className='px-3 mt-10'>
-         <div className="flex justify-between  pt-12 pb-32 border-t-2 border-[#48D6D7] ">
+      <footer className='px-3 mt-20 '>
+         <div className="flex justify-between pt-12 border-t-2 border-[#48D6D7] ">
             <p className="text-gray-500">&copy; Copyright 2024 Transisi</p>
             <div className="flex gap-3 items-center">
                <FaInstagram className='text-xl' />
