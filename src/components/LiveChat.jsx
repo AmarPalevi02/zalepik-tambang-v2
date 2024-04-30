@@ -1,34 +1,28 @@
-import React, {  useState } from 'react'
-import ChatBot from 'react-simple-chatbot';
-import CustomHeade from './chatbot/CustomHeade';
-
-import {steps} from '../constans/cutomChat'
-import { livechat } from '../assets'
+import React, { useEffect} from 'react'
 
 const LiveChat = () => {
-   const [active, setActive] = useState(false)
+   const TawkTo = () => {
+      useEffect(() => {
+         const script = document.createElement('script');
+         script.async = true;
+         script.src = 'https://embed.tawk.to/662fec62a0c6737bd1325919/1hslj6p33';
+         script.charset = 'UTF-8';
+         script.setAttribute('crossorigin', '*');
+         document.head.appendChild(script);
 
-   const handleLiveChat = () => {
-      setActive(!active)
-   }
+         return () => {
+            document.head.removeChild(script);
+         };
+      }, []);
+
+      return null; 
+   };
+
+  
 
    return (
       <div className='fixed z-40 bottom-0 right-0 bottom-5 right-4'>
-         <button
-            onClick={handleLiveChat}
-            className={`${active === true ? 'hidden' : ''} `}
-         >
-            <img src={livechat} alt="" />
-         </button>
-
-         {active ? (
-            <ChatBot
-               steps={steps}
-               headerComponent={<CustomHeade botName={'Transisi'} onClickClose={handleLiveChat} />}
-            />
-         ) : ("")
-         }
-
+         <TawkTo />
       </div>
    )
 }
