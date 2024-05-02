@@ -29,7 +29,7 @@ const Profile = () => {
             </div>
 
             <div className="flex flex-col md:flex-row md:justify-between relative">
-               <div className="w-full md:w-[50%] flex bg-red-600">
+               <div className="w-full md:w-[50%] flex">
                   <img
                      src={team}
                      className='object-cover w-full'
