@@ -63,7 +63,7 @@ const Navbar = () => {
                            return (
                               <li
                                  key={i}
-                                 className={`${active === item.menu ? "text-[#48D6D7]" : "text-white"}`}
+                                 className={`${active === item.menu ? "text-[#48D6D7]" : "text-white"} mb-3 font-semibold `}
                                  onClick={(() => setActive(item.menu))}
                               >
                                  <a href={`#${item.id}`}>
