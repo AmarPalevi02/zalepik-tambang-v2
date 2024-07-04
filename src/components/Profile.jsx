@@ -5,8 +5,8 @@ import { team, logo2 } from '../assets'
 
 const Profile = () => {
    return (
-      <div id='profil' classNameName='w-full h-full'>
-         <div classNameName="flex w-full flex-col items-center ">
+      <div id='profil' className='w-full h-full'>
+         <div className="flex w-full flex-col items-center ">
             <div className="flex flex-col md:flex-row md:justify-between ">
                <div className="flex flex-col justify-center bg-black py-4 md:w-[50%]">
                   <p className="text-[#39FAC5] px-8">P R O F I L</p>
@@ -43,7 +43,7 @@ const Profile = () => {
                      className='w-80'
                      alt=""
                   />
-                  <p class="text-gray-500 px-5">Transisi merupakan perusahaan konsultan IT berbasis di Yogyakarta yang berfokus pada
+                  <p className="text-gray-500 px-5">Transisi merupakan perusahaan konsultan IT berbasis di Yogyakarta yang berfokus pada
                      pengembangan aplikasi web dan mobile untuk segmen enterprise. Transisi membantu klien melalui integrasi
                      teknologi ke dalam proses bisnis mulai dari tahap perencanaan, perancangan, pengembangan, implementasi, dan
                      pemeliharaan. Kami percaya bahwa masa depan sepenuhnya digital. Tanpa pelibatan teknologi, bisnis hanya akan

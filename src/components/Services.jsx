@@ -61,7 +61,7 @@ const Services = () => {
                         03.</div>
                      <img
                         src={card3}
-                        class="w-16 h-16"
+                        className="w-16 h-16"
                         alt=""
                      />
                   </div>
@@ -79,7 +79,7 @@ const Services = () => {
                         04.</div>
                      <img
                         src={card4}
-                        class="w-16 h-16"
+                        className="w-16 h-16"
                         alt=""
                      />
                   </div>

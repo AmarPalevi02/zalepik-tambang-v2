@@ -57,7 +57,7 @@ const Navbar = () => {
 
             <div className={`${togle ? "flex" : "hidden"} px-3  fixed z-50 top-16 left-0  my-2 min-w-full  sidebar`}>
                {togle ? (
-                  <div className='w-full  relative flex justify-start bg-black-gradient p-6 rounded-xl '>
+                  <div className='w-full relative flex justify-start bg-black-gradient p-6 rounded-xl '>
                      <ul className="mt-[-6px]">
                         {menuNavbar.map((item, i) => {
                            return (

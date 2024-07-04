@@ -10,9 +10,15 @@ const Footer = () => {
          <div className="flex justify-between pt-12 border-t-2 border-[#48D6D7] ">
             <p className="text-gray-500">&copy; Copyright 2024 Transisi</p>
             <div className="flex gap-3 items-center">
-               <FaInstagram className='text-xl' />
-               <LiaLinkedin className='text-2xl' />
-               <TiSocialFacebookCircular className='text-2xl' />
+               <a href="https://www.instagram.com/zalepik.dev/">
+                  <FaInstagram className='text-xl  cursor-pointer' />
+               </a>
+               <a href="https://www.linkedin.com/company/zalepik-studio/">
+                  <LiaLinkedin className='text-2xl cursor-pointer' />
+               </a>
+               <a href="https://web.facebook.com/ZalepikStudio?locale=id_ID">
+                  <TiSocialFacebookCircular className='text-2xl cursor-pointer' />
+               </a>
             </div>
          </div>
       </footer >

@@ -6,14 +6,14 @@ const Idea = () => {
    return (
       <div className='w-full relative px-3 mt-20 '>
          <div className="flex flex-col justify-center items-center bg-black rounded-xl py-12">
-            <div class="w-full relative flex justify-center  ">
-               <div class="w-[650px]  text-center  relative z-10">
-                  <p class="text-[#39FAC5] mb-2">PUNYA IDE HEBAT UNTUK KEHIDUPAN?</p>
-                  <h1 class="text-white sm:text-xl md:text-4xl font-bold bg-[rgba(57,250,197,0.2)] px-5 py-3 shadow-custom ">Mari
+            <div className="w-full relative flex justify-center  ">
+               <div className="w-[650px]  text-center  relative z-10">
+                  <p className="text-[#39FAC5] mb-2">PUNYA IDE HEBAT UNTUK KEHIDUPAN?</p>
+                  <h1 className="text-white sm:text-xl md:text-4xl font-bold bg-[rgba(57,250,197,0.2)] px-5 py-3 shadow-custom ">Mari
                      Ceritakan Ide Anda, Dan Mari Membangun Sesuatu Yang
                      Hebat.</h1>
                </div>
-               <div class="w-[90%] h-2 bg-[#48D6D7] absolute top-[55%]"></div>
+               <div className="w-[90%] h-2 bg-[#48D6D7] absolute top-[55%]"></div>
             </div>
 
             <div className="my-14">
